@@ -35,6 +35,9 @@ $(call inherit-product-if-exists, vendor/google_devices/akita/proprietary/akita/
 $(call inherit-product-if-exists, vendor/google_devices/akita/proprietary/device-vendor.mk)
 $(call inherit-product-if-exists, vendor/google_devices/akita/proprietary/WallpapersAkita.mk)
 
+# Use libc variant by default
+PRODUCT_USE_SCUDO := true
+
 DEVICE_PACKAGE_OVERLAYS += device/google/akita/akita/overlay
 
 include device/google/akita/audio/akita/audio-tables.mk
