@@ -24,6 +24,9 @@ TARGET_PREBUILT_KERNEL := device/google/akita-kernel/Image.lz4
 # Basic Call Recorder
 include vendor/bcr/bcr.mk
 
+# Viper4AndroidFx
+include packages/apps/ViPER4AndroidFX/config.mk
+
 # wireless_charger HAL service
 include device/google/gs-common/wireless_charger/wireless_charger.mk
 
