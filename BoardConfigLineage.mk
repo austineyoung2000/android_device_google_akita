@@ -5,6 +5,9 @@
 #
 
 DEVICE_PRODUCT_COMPATIBILITY_MATRIX_FILE += $(DEVICE_PATH)/aam_compatibility_matrix.xml
+DEVICE_PATH := device/google/akita
+# Init
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_akita
 
 # Kernel modules
 BOARD_VENDOR_KERNEL_RAMDISK_KERNEL_MODULES_BLOCKLIST_FILE := $(DEVICE_PATH)/modules.blocklist.vendor_kernel_boot
