@@ -15,6 +15,15 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.euicc.mep.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/android.hardware.telephony.euicc.mep.xml \
     frameworks/native/data/etc/android.hardware.telephony.euicc.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/android.hardware.telephony.euicc.xml
 
+PRODUCT_PACKAGES += \
+    EuiccSupportPixelOverlay
+
+# Kernel
+TARGET_PREBUILT_KERNEL := device/google/akita-kernel/Image.lz4
+
+# Basic Call Recorder
+include vendor/bcr/bcr.mk
+
 # wireless_charger HAL service
 include device/google/gs-common/wireless_charger/wireless_charger.mk
 
