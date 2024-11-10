@@ -24,6 +24,9 @@ TARGET_PREBUILT_KERNEL := device/google/akita-kernel/Image.lz4
 # Basic Call Recorder
 include vendor/bcr/bcr.mk
 
+# PixelParts
+include packages/apps/PixelParts/device.mk
+
 # wireless_charger HAL service
 include device/google/gs-common/wireless_charger/wireless_charger.mk
 
