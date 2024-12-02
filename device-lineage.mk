@@ -27,6 +27,9 @@ include vendor/bcr/bcr.mk
 # PixelParts
 include packages/apps/PixelParts/device.mk
 
+# Viper4Android FX
+include packages/apps/ViPER4AndroidFX/config.mk
+
 # wireless_charger HAL service
 include device/google/gs-common/wireless_charger/wireless_charger.mk
 
