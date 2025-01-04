@@ -336,19 +336,6 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_PACKAGES += \
 	WifiOverlay2024Mid
 
-# Include Carrier Runtime Configuration
-PRODUCT_PACKAGE_OVERLAYS += \
-    device/google/akita/overlay
-
-# RRO Packages
-PRODUCT_PACKAGES += \
-    CarrierSettingsOverlay \
-    CarrierSettingsConfigOverlay \
-    CarrierSettingsProviderOverlay \
-    CarrierSettingsSystemUIOverlay \
-    TeleServiceOverlay \
-    TelephonyProviderOverlay
-
 # Trusty liboemcrypto.so
 PRODUCT_SOONG_NAMESPACES += vendor/google_devices/akita/prebuilts
 
