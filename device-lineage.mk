@@ -30,6 +30,10 @@ include packages/apps/PixelParts/device.mk
 # Viper4Android FX
 include packages/apps/ViPER4AndroidFX/config.mk
 
+# IWLAN
+PRODUCT_PACKAGES += \
+    Iwlan
+
 # wireless_charger HAL service
 include device/google/gs-common/wireless_charger/wireless_charger.mk
 
