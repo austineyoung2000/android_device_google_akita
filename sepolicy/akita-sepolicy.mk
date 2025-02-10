@@ -3,3 +3,6 @@ BOARD_SEPOLICY_DIRS += device/google/akita/sepolicy/aam
 BOARD_SEPOLICY_DIRS += device/google/akita/sepolicy/vendor
 BOARD_SEPOLICY_DIRS += device/google/akita/sepolicy/tracking_denials
 BOARD_SEPOLICY_DIRS += device/google/akita/sepolicy/radio
+
+# audio
+BOARD_SEPOLICY_DIRS += device/google/shusky/sepolicy/audio
